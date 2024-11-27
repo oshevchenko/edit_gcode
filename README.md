@@ -22,7 +22,7 @@ optional arguments:
 ```
 Example:
 ```
-$ python3 ./edit_gcode.py ~/workspace/FPV/3Dprint/Eclipson_MX/G-codes/PLA/ --multiplier 0.5
+$ python3 ./edit_gcode.py /home/test/G-codes/PLA/ --multiplier 0.5
 The sub-directory 'modified' exists in /home/test/G-codes/PLA/
 Processing file: /home/test/G-codes/PLA/Horn_x2.gcode
 Processing file: /home/test/G-codes/PLA/Prop_hub.gcode
