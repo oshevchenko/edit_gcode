@@ -1,15 +1,14 @@
-# Speed change in GCode
+# Speed change in GCode for 3D printers (Fxxxx parameter)
 
-Speed change in GCode for 3D printers (Fxxxx parameter) by a factor.
-
+Process G-code files within a specified directory, adjusting their speed by applying a multiplication factor (default: 0.5). The script creates a 'modified' sub-directory within the specified directory
+and saves the updated files there.
 
 ```
 $ python3 ./edit_gcode.py -h
-
 usage: edit_gcode.py [-h] [--multiplier MULTIPLIER] directory
 
-Process G-code files in a directory. Modify the speed of the G-code files by multiplying a factor (default 0.5). This script will create a 'modified' sub-directory in the specified directory and save
-the modified files there.
+Process G-code files within a specified directory, adjusting their speed by applying a multiplication factor (default: 0.5). The script creates a 'modified' sub-directory within the specified directory
+and saves the updated files there.
 
 positional arguments:
   directory             The directory containing G-code files.
@@ -18,7 +17,6 @@ optional arguments:
   -h, --help            show this help message and exit
   --multiplier MULTIPLIER
                         Speed multiplier.
-
 ```
 Example:
 ```

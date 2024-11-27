@@ -49,10 +49,11 @@ def run_through_gcode_files(directory, callback):
             callback(file_path, file_path_modified)
 
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser(description="""Process G-code files in a directory.
-        Modify the speed of the G-code files by multiplying a factor (default 0.5).
-        This script will create a 'modified' sub-directory in the specified directory
-        and save the modified files there.""")
+    parser = argparse.ArgumentParser(description=
+    """Process G-code files within a specified directory, """
+    """adjusting their speed by applying a multiplication factor (default: 0.5). """
+    """The script creates a 'modified' sub-directory within the specified directory """
+    """and saves the updated files there.""")
     parser.add_argument("directory", type=str, help="The directory containing G-code files.")
     parser.add_argument("--multiplier", type=float, help="Speed multiplier.")
     args = parser.parse_args()
